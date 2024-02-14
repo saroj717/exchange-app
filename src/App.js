@@ -1,16 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './Home';
 import './App.css';
-
 
 const App = () => {
   return (
-    <div class="container">
-  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand mx-auto" href="#">Exchange App</a>
-    </div>
-  </nav>
-</div>
+    <Router>
+      <div className="container">
+        <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+          <div className="container-fluid">
+            <a className="navbar-brand mx-auto" href="#"><h2>Currency Converter</h2></a>
+          </div>
+        </nav>
+      </div>
+      <Routes>
+        <Route path="/" exact Component={Home} />
+      </Routes>
+    </Router>
   )
 }
 
