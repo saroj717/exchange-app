@@ -6,18 +6,14 @@ import './Home.js'
 
 const App = () => {
   return (
-    <Router>
-      <div className="container">
-        <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-          <div className="container-fluid">
-            <a className="navbar-brand mx-auto" href="#"><h2>Currency Converter</h2></a>
-          </div>
-        </nav>
-      </div>
-      <Routes>
-        <Route path="/" exact Component={Home} />
-      </Routes>
-    </Router>
+    <div class="container">
+      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-auto" href="#">Exchange App</a>
+        </div>
+      </nav>
+      <Home />
+    </div>
   )
 }
 
