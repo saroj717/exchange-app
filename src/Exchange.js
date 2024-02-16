@@ -202,7 +202,7 @@ class Exchange extends Component {
         </div>       
         <div className='text-center text-secondary'>
           <h6>Build by Saroj <span className='fs-5'>&middot;</span> Here is my link: 
-          <a href="https://github.com/saroj717"><button className='btn btn-sm text-primary'><b>GitHub</b></button></a></h6>
+          <a href="https://github.com/saroj717/exchange-app"><button className='btn btn-sm text-primary'><b>GitHub</b></button></a></h6>
         </div>
       </div>
     )
