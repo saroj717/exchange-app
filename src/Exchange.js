@@ -105,6 +105,8 @@ class Exchange extends Component {
             label: label,
             data,
             fill: false,
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(55, 99, 132)',
             tension: 0,
           }
         ]
