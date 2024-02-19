@@ -5,7 +5,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='/exchange-app'>
       <Routes>
         <Route path="/" exact element={ 
           <div className="container mt-5">
