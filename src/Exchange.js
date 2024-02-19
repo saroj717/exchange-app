@@ -60,12 +60,19 @@ class Exchange extends Component {
   }
 
   handleselectedBaseCurrency = (e) => {
-    this.setState({ selectedBaseCurrency: e.target.value })
-    console.log(this.state.selectedBaseCurrency)
+    const selectedBaseCurrency = e.target.value;
+    this.setState({ selectedBaseCurrency }, () => {
+      console.log(this.state.selectedBaseCurrency);
+      this.getHistoricalRates(this.state.selectedBaseCurrency, this.state.selectedExchangeCurrency);
+    });
   }
 
   handleSelectExchangeCurrency = (event) => {
-    this.setState({ selectedExchangeCurrency: event.target.value });
+    const selectedExchangeCurrency = event.target.value;
+    this.setState({ selectedExchangeCurrency }, () => { 
+      console.log(this.state.selectedExchangeCurrency);
+      this.getHistoricalRates(this.state.selectedBaseCurrency, this.state.selectedExchangeCurrency);
+    });
   };
 
   handleInputChange = (event) => {
